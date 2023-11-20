@@ -4,7 +4,11 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 # Load data
-df = pd.read_csv('C:/Users/prase/OneDrive/Documents/INFORMATICS/Project_proposal/dataset.csv')
+file_path = 'dataset.csv'
+df = pd.read_csv(file_path)
+
+# Load data
+#df = pd.read_csv('C:/Users/prase/OneDrive/Documents/INFORMATICS/Project_proposal/dataset.csv')
 
 def plot_quantity_distribution(sort_by):
     # Group the data by 'Country' and calculate the average quantity for each country
